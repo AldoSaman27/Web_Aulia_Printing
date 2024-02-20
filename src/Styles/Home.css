@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Permanent+Marker&display=swap');
+
+section#Home header {
+    width: 100%;
+    height: 300px;
+    background-image: url('../Assets/background.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section#Home header h1 {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.5rem;
+}
+
+section.OurProduct .container h1,
+section.WhyUs .container h1 {
+    font-family: "Anta", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+section.OurProduct .container div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1100px;
+}
+
+section.OurProduct .container div div {
+    position: relative;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+section.OurProduct .container div div img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    transition: 0.3s ease;
+}
+
+section.OurProduct .container div div:hover img {
+    transform: scale(1.2);
+}
+
+section.OurProduct .container div div .title-box {
+    content: "";
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0), #000);
+    z-index: 1;
+    transform: translateY(50px);
+    transition: 0.5s ease;
+}
+
+section.OurProduct .container div div:hover .title,
+section.OurProduct .container div div:hover .title-box {
+    transform: translateX(0);
+}
+
+section.OurProduct .container div div .title {
+    position: absolute;
+    width: 100%;
+    color: white;
+    z-index: 2;
+    bottom: 10px;
+    padding: 10px;
+    transform: translateY(50px);
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+/* Media Query */
+/* Tablet */
+@media (max-width: 768px) {
+    html {
+        font-size: 65%;
+    }
+
+    section.OurProduct .container div div {
+        width: 150px;
+    }
+}
+
+/* Mobile L */
+@media (max-width: 425px) {
+    html {
+        font-size: 65%;
+    }
+}
+
+/* Mobile M */ 
+@media (max-width: 375px) {
+    html {
+        font-size: 65%;
+    }
+}
+
+/* Mobile S */
+@media (max-width: 320px) {
+    html {
+        font-size: 55%;
+    }
+}
