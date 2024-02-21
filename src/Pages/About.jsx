@@ -8,7 +8,7 @@ const About = () => {
     return (
         <>
             <NavigationBar />
-            <section id="About" style={{ padding: '30px 0px' }}>
+            <section id="About" style={{ minHeight: '100vh', padding: '30px 0px' }}>
                 <Container>
                     <h1 className="text-center mb-4">About Us</h1>
                     <div className="row">
