@@ -10,7 +10,7 @@ const About = () => {
             <NavigationBar />
             <section id="About" style={{ padding: '30px 0px' }}>
                 <Container>
-                    <h1 className="text-center">About Us</h1>
+                    <h1 className="text-center mb-4">About Us</h1>
                     <div className="row">
                         <div className="col-12 col-md-4 mb-4">
                             <img src={Product} alt="" style={{ width: '100%', borderRadius: 10 }} />
