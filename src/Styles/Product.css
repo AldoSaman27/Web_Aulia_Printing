@@ -1,0 +1,62 @@
+section#Product .container h1 {
+    font-family: "Anta", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+section#Product .container div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1100px;
+}
+
+section#Product .container div div {
+    position: relative;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+section#Product .container div div img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    transition: 0.3s ease;
+}
+
+section#Product .container div div:hover img {
+    transform: scale(1.2);
+}
+
+section#Product .container div div .title-box {
+    content: "";
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0), #000);
+    z-index: 1;
+    transform: translateY(50px);
+    transition: 0.5s ease;
+}
+
+section#Product .container div div:hover .title,
+section#Product .container div div:hover .title-box {
+    transform: translateX(0);
+}
+
+section#Product .container div div .title {
+    position: absolute;
+    width: 100%;
+    color: white;
+    z-index: 2;
+    bottom: 10px;
+    padding: 10px;
+    transform: translateY(50px);
+    transition: 0.5s ease;
+    cursor: pointer;
+}
