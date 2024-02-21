@@ -1,0 +1,29 @@
+section#Contact .container h1 {
+    font-family: "Anta", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Media Query */
+/* Laptop */
+@media (max-width: 1024px) {
+    iframe {
+        width: 100% !important;
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+}
+
+/* Mobile L */
+@media (max-width: 425px) {
+}
+
+/* Mobile M */ 
+@media (max-width: 375px) {
+}
+
+/* Mobile S */
+@media (max-width: 320px) {
+}
