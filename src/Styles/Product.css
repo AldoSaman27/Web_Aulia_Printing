@@ -59,3 +59,23 @@ section#Product .container div div .title {
     transition: 0.5s ease;
     cursor: pointer;
 }
+
+/* Media Query */
+/* Tablet */
+@media (max-width: 768px) {
+    section#Product .container div div {
+        width: 150px;
+    }
+}
+
+/* Mobile L */
+@media (max-width: 425px) {
+}
+
+/* Mobile M */ 
+@media (max-width: 375px) {
+}
+
+/* Mobile S */
+@media (max-width: 320px) {
+}
