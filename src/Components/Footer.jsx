@@ -6,7 +6,7 @@ const Footer = () => {
     const navigate = useNavigate();
 
     return (
-        <footer className="bg-dark" style={{ width: '100%', height: '240px', padding: '40px 0px' }}>
+        <footer className="bg-dark" style={{ width: '100%', minHeight: '240px', padding: '40px 0px' }}>
             <Container>
                 <div className="row">
                     <div className="col-12 col-md-6 d-flex flex-column align-items-center align-items-md-start justify-content-center mb-4">
