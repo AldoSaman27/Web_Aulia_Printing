@@ -11,7 +11,9 @@ const NavigationBar = () => {
       className="navbar"
       style={isActive ? { backgroundColor: "#1b262c" } : {}}
     >
-      <h1 className="navbar-brand">Aulia Printing</h1>
+      <h1 className="navbar-brand">
+        Aulia <span>Printing</span>
+      </h1>
 
       <input
         type="checkbox"

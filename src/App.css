@@ -37,6 +37,11 @@ footer.footer h1.footer-brand {
   font-weight: 700;
 }
 
+header.navbar h1.navbar-brand span,
+footer.footer h1.footer-brand span {
+  color: #3282b8;
+}
+
 header.navbar nav.navbar-menu {
   display: flex;
   gap: 2.5rem;

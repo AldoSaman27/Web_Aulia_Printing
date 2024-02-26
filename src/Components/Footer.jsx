@@ -5,7 +5,9 @@ const Footer = () => {
     <footer className="footer">
       <div className="row">
         <div className="col-12 col-md-6 d-flex flex-column align-items-center align-items-md-start justify-content-center mb-4">
-          <h1 className="footer-brand">Aulia Printing</h1>
+          <h1 className="footer-brand">
+            Aulia <span>Printing</span>
+          </h1>
           <p className="footer-description">
             Percetakan | Service Komputer / Laptop & Printer | Fotocopy & ATK
           </p>
