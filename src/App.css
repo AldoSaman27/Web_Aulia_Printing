@@ -91,6 +91,10 @@ footer.footer a.footer-sosmed {
   border-radius: 100%;
 }
 
+footer.footer a.footer-sosmed:hover {
+  background-color: #3282b8;
+}
+
 footer.footer div.footer-menu {
   display: flex;
   gap: 2.5rem;
