@@ -7,12 +7,12 @@ import { Pencil, Printer, Tools, ArrowRight } from "react-bootstrap-icons";
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
   return (
     <>
       <NavigationBar />
-      <section id="Home">
+      <section id="home" className="home">
         <Container>
           <h1 className="text-white text-center">
             Cetak Berkualitas Harga Terjangkau
@@ -26,30 +26,47 @@ const Home = () => {
           </Button>
         </Container>
       </section>
-        <div style={{ width: '100%', height: '150px', backgroundColor: '#3282B8', padding: '10px 20px' }} className="d-flex align-items-center justify-content-between">
-                <div style={{ width: '30%', height: '100%' }} className="d-flex flex-column align-items-center justify-content-center text-center">
-                    <div className="d-flex align-items-center justify-content-center m-1">
-                        <Printer size={35} color="white"/>
-                    </div>
-                    <p className="text-white m-1">Percetakan</p>
-                </div>
-                <div style={{ width: '30%', height: '100%' }} className="d-flex flex-column align-items-center justify-content-center text-center">
-                    <div className="d-flex align-items-center justify-content-center m-1">
-                        <Tools size={35} color="white"/>
-                    </div>
-                    <p className="text-white m-1">Service Komputer / Laptop & Printer</p>
-                </div>
-                <div style={{ width: '30%', height: '100%' }} className="d-flex flex-column align-items-center justify-content-center text-center">
-                    <div className="d-flex align-items-center justify-content-center m-1">
-                        <Pencil size={35} color="white"/>
-                    </div>
-                    <p className="text-white m-1">Fotocopy & ATK</p>
-                </div> 
-            </div>
-      <section className="WhyUs" style={{ padding: "50px 20px" }}>
+      <div
+        style={{
+          width: "100%",
+          height: "150px",
+          backgroundColor: "#3282B8",
+          padding: "10px 20px",
+        }}
+        className="d-flex align-items-center justify-content-between"
+      >
+        <div
+          style={{ width: "30%", height: "100%" }}
+          className="d-flex flex-column align-items-center justify-content-center text-center"
+        >
+          <div className="d-flex align-items-center justify-content-center m-1">
+            <Printer size={35} color="white" />
+          </div>
+          <p className="text-white m-1">Percetakan</p>
+        </div>
+        <div
+          style={{ width: "30%", height: "100%" }}
+          className="d-flex flex-column align-items-center justify-content-center text-center"
+        >
+          <div className="d-flex align-items-center justify-content-center m-1">
+            <Tools size={35} color="white" />
+          </div>
+          <p className="text-white m-1">Service Komputer / Laptop & Printer</p>
+        </div>
+        <div
+          style={{ width: "30%", height: "100%" }}
+          className="d-flex flex-column align-items-center justify-content-center text-center"
+        >
+          <div className="d-flex align-items-center justify-content-center m-1">
+            <Pencil size={35} color="white" />
+          </div>
+          <p className="text-white m-1">Fotocopy & ATK</p>
+        </div>
+      </div>
+      <section id="about-us" className="about-us">
         <Container>
           <div className="row">
-            <h1 className="text-center mb-3">Why Us?</h1>
+            <h1 className="text-center mb-3">About Us</h1>
             <div className="col-12 col-md-6">
               <div>
                 <h2 className="m-0 p-0">Aulia Printing</h2>
@@ -120,7 +137,7 @@ const Home = () => {
         </Container>
       </section>
 
-      <section className="OurProduct" style={{ padding: "0px 0px 50px 0px" }}>
+      <section id="product" className="product">
         <Container className="d-flex flex-column align-items-center justify-content-center">
           <h1 className="text-center mb-5">Our Products</h1>
           <div>

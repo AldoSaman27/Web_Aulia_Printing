@@ -8,6 +8,57 @@
   color: #000;
 }
 
+header.navbar h1.navbar-brand,
+header.navbar nav.navbar-menu a {
+  margin: 0;
+  padding: 0;
+}
+
+header.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  padding: 0% 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+  transition: 1s ease-out;
+}
+
+header.navbar h1.navbar-brand {
+  font-size: 2rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+header.navbar nav.navbar-menu {
+  display: flex;
+  gap: 2.5rem;
+}
+
+header.navbar nav.navbar-menu a {
+  font-size: 1.15rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+header.navbar label.navbar-toggle {
+  font-size: 2.8rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+header.navbar input#checkbox,
+header.navbar label.navbar-toggle,
+header.navbar label.navbar-toggle #close-icon {
+  display: none;
+}
+
 footer .container h1 {
   font-family: "Permanent Marker", cursive;
   font-weight: 400;
@@ -19,4 +70,55 @@ footer .container .Sosmed {
   width: 35px;
   height: 35px;
   background-color: white;
+}
+
+/* Media Query */
+/* Tablet */
+@media (max-width: 768px) {
+}
+
+/* Mobile L */
+@media (max-width: 425px) {
+  header.navbar label.navbar-toggle {
+    display: flex;
+  }
+
+  header.navbar nav.navbar-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 0;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    transition: 1s ease;
+    background-color: #1b262c;
+    display: block;
+  }
+
+  header.navbar nav.navbar-menu a {
+    display: block;
+    margin: 2.5rem;
+    text-align: center;
+  }
+
+  #checkbox:checked ~ .navbar-toggle #menu-icon {
+    display: none;
+  }
+
+  #checkbox:checked ~ .navbar-toggle #close-icon {
+    display: block;
+  }
+
+  #checkbox:checked ~ .navbar-menu {
+    height: 250px;
+  }
+}
+
+/* Mobile M */
+@media (max-width: 375px) {
+}
+
+/* Mobile S */
+@media (max-width: 320px) {
 }
