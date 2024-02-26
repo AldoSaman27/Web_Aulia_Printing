@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Anta&family=Permanent+Marker&display=swap");
 
 * {
   margin: 0;
@@ -9,6 +8,8 @@
 }
 
 header.navbar h1.navbar-brand,
+footer.footer h1.footer-brand,
+footer.footer p.footer-description,
 header.navbar nav.navbar-menu a {
   margin: 0;
   padding: 0;
@@ -28,7 +29,8 @@ header.navbar {
   transition: 1s ease-out;
 }
 
-header.navbar h1.navbar-brand {
+header.navbar h1.navbar-brand,
+footer.footer h1.footer-brand {
   font-size: 2rem;
   color: #fff;
   text-decoration: none;
@@ -59,29 +61,57 @@ header.navbar label.navbar-toggle #close-icon {
   display: none;
 }
 
-footer {
+footer.footer {
   width: 100%;
   min-height: 240px;
   background-color: #1b262c;
-  padding: 40px 20px;
+  padding: 40px 10%;
 }
 
-footer .container h1 {
-  font-family: "Permanent Marker", cursive;
-  font-weight: 400;
-  font-style: normal;
-  font-size: xx-large;
+footer.footer p.footer-description {
+  color: #6c757d;
 }
 
-footer .container .Sosmed {
+footer.footer a.footer-sosmed {
   width: 35px;
   height: 35px;
-  background-color: white;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+}
+
+footer.footer div.footer-menu {
+  display: flex;
+  gap: 2.5rem;
+}
+
+footer.footer div.footer-menu a.footer-link {
+  font-size: 1.15rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+footer.footer p.footer-copyright {
+  color: #fff;
+  text-align: end;
 }
 
 /* Media Query */
+/* Laptop */
+@media (max-width: 1024px) {
+  footer.footer p.footer-description {
+    font-size: 75%;
+  }
+}
+
 /* Tablet */
 @media (max-width: 768px) {
+  footer.footer p.footer-description {
+    font-size: 70%;
+  }
 }
 
 /* Mobile L */
@@ -119,6 +149,10 @@ footer .container .Sosmed {
 
   #checkbox:checked ~ .navbar-menu {
     height: 250px;
+  }
+
+  footer.footer p.footer-copyright {
+    text-align: center;
   }
 }
 
