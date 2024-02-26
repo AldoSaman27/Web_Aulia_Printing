@@ -54,6 +54,10 @@ header.navbar nav.navbar-menu a {
   font-weight: 500;
 }
 
+header.navbar nav.navbar-menu a:hover {
+  color: #3282b8;
+}
+
 header.navbar label.navbar-toggle {
   font-size: 2.8rem;
   color: #fff;
@@ -97,6 +101,10 @@ footer.footer div.footer-menu a.footer-link {
   color: #fff;
   text-decoration: none;
   font-weight: 500;
+}
+
+footer.footer div.footer-menu a.footer-link:hover {
+  color: #3282b8;
 }
 
 footer.footer p.footer-copyright {
