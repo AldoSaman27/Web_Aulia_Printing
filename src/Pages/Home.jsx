@@ -74,7 +74,7 @@ const Home = () => {
         <Container>
           <div className="row">
             <h1 className="text-center mb-3">About Us</h1>
-            <div className="col-12 col-md-6">
+            <div className="col-12 col-lg-6">
               <div>
                 <h2 className="m-0 p-0">Aulia Printing</h2>
                 <p className="text-secondary fw-semibold">
@@ -98,7 +98,7 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            <div className="col-12 col-md-6 d-flex gap-5 align-items-center justify-content-center justify-content-md-end">
+            <div className="col-12 col-lg-6 d-flex gap-5 align-items-center justify-content-center justify-content-lg-end">
               <div style={{ maxWidth: 200 }}>
                 <p
                   className="m-0 p-0"
