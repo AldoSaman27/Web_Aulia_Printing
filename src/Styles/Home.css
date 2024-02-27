@@ -51,15 +51,19 @@ section.home .container button:hover {
 }
 
 section.product .container,
-section.about-us .container {
-  padding: 85px 20px 85px;
+section.about-us .container,
+section.contact .container {
+  padding: 90px 20px 90px;
 }
 
 section.product .container h1,
-section.about-us .container h1 {
-  font-family: "Anta", sans-serif;
+section.about-us .container h1,
+section.contact .container h1 {
   font-weight: bold;
-  font-style: normal;
+}
+
+section.product {
+  background-color: #f5f5f5;
 }
 
 section.product .container div {
@@ -119,7 +123,24 @@ section.product .container div div .title {
   cursor: pointer;
 }
 
+section.contact .container iframe {
+  border: 5px solid #0f4c75;
+  border-radius: 10px;
+}
+
+section.contact .container a {
+  background-color: #0f4c75;
+  border-color: #0f4c75;
+}
+
 /* Media Query */
+/* Laptop */
+@media (max-width: 1024px) {
+  section.contact .container iframe {
+    width: 100% !important;
+  }
+}
+
 /* Tablet */
 @media (max-width: 768px) {
   html {

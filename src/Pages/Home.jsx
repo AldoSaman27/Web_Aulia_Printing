@@ -3,7 +3,13 @@ import Footer from "../Components/Footer";
 import Product from "../Assets/AuliaPrinting.png";
 import NavigationBar from "../Components/NavigationBar";
 import { Button, Container } from "react-bootstrap";
-import { Pencil, Printer, Tools, ArrowRight } from "react-bootstrap-icons";
+import {
+  Pencil,
+  Printer,
+  Tools,
+  ArrowRight,
+  Whatsapp,
+} from "react-bootstrap-icons";
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
@@ -190,6 +196,34 @@ const Home = () => {
               <img src={Product} alt="" />
               <div className="title-box"></div>
               <div className="title">Aulia Printing</div>
+            </div>
+          </div>
+        </Container>
+      </section>
+      <section id="contact" className="contact">
+        <Container>
+          <div className="row">
+            <div className="col-12 col-lg-6 mb-4">
+              <h1>Contact</h1>
+              <h3>Aulia Printing</h3>
+              <p>
+                kompleks Blok Plan Perkantoran, Jl. Jend. Sudirman, Palopo, Kec.
+                Marisa, Kabupaten Pohuwato, Gorontalo 96265
+              </p>
+              <Button href="https://wa.me/+6282290489976" target="_blank">
+                <Whatsapp color="white" size={20} className="me-2 mb-1" />
+                +62 822 9048 9976
+              </Button>
+            </div>
+            <div className="col-12 col-lg-6">
+              <iframe
+                title="Aulia Printing"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2148.0791603301573!2d121.94570305289513!3d0.4655780743584088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x327835cf51429e5d%3A0x74dc0ecce3997f3c!2sAulia%20Printing!5e0!3m2!1sid!2sid!4v1708521386956!5m2!1sid!2sid"
+                style={{ width: 500, height: 400 }}
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
         </Container>
