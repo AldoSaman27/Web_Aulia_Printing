@@ -9,6 +9,7 @@ import {
   Tools,
   ArrowRight,
   Whatsapp,
+  Cart4,
 } from "react-bootstrap-icons";
 import { useNavigate } from "react-router-dom";
 
@@ -146,56 +147,118 @@ const Home = () => {
       <section id="product" className="product">
         <Container className="d-flex flex-column align-items-center justify-content-center">
           <h1 className="text-center mb-5">Our Products</h1>
-          <div>
-            <div>
-              <img src={Product} alt="" />
-              <div className="title-box"></div>
-              <div className="title">Aulia Printing</div>
+          <div className="row row-cols-lg-4 gap-lg-0 row-cols-md-3 gap-md-3 justify-content-center">
+            <div className="col mb-4">
+              <div className="card-product">
+                <div className="card-header">
+                  <img src={Product} alt="" className="card-img" />
+                </div>
+                <div className="card-body">
+                  <h1 className="card-title">Aulia Printing</h1>
+                  <p className="card-price">Rp. -</p>
+                  <Button className="card-button">
+                    <Cart4 color="white" className="mb-1 me-1" /> Order Now
+                  </Button>
+                </div>
+              </div>
             </div>
-            <div>
-              <img src={Product} alt="" />
-              <div className="title-box"></div>
-              <div className="title">Aulia Printing</div>
+            <div className="col mb-4">
+              <div className="card-product">
+                <div className="card-header">
+                  <img src={Product} alt="" className="card-img" />
+                </div>
+                <div className="card-body">
+                  <h1 className="card-title">Aulia Printing</h1>
+                  <p className="card-price">Rp. -</p>
+                  <Button className="card-button">
+                    <Cart4 color="white" className="mb-1 me-1" /> Order Now
+                  </Button>
+                </div>
+              </div>
             </div>
-            <div>
-              <img src={Product} alt="" />
-              <div className="title-box"></div>
-              <div className="title">Aulia Printing</div>
+            <div className="col mb-4">
+              <div className="card-product">
+                <div className="card-header">
+                  <img src={Product} alt="" className="card-img" />
+                </div>
+                <div className="card-body">
+                  <h1 className="card-title">Aulia Printing</h1>
+                  <p className="card-price">Rp. -</p>
+                  <Button className="card-button">
+                    <Cart4 color="white" className="mb-1 me-1" /> Order Now
+                  </Button>
+                </div>
+              </div>
             </div>
-            <div>
-              <img src={Product} alt="" />
-              <div className="title-box"></div>
-              <div className="title">Aulia Printing</div>
+            <div className="col mb-4">
+              <div className="card-product">
+                <div className="card-header">
+                  <img src={Product} alt="" className="card-img" />
+                </div>
+                <div className="card-body">
+                  <h1 className="card-title">Aulia Printing</h1>
+                  <p className="card-price">Rp. -</p>
+                  <Button className="card-button">
+                    <Cart4 color="white" className="mb-1 me-1" /> Order Now
+                  </Button>
+                </div>
+              </div>
             </div>
-            <div>
-              <img src={Product} alt="" />
-              <div className="title-box"></div>
-              <div className="title">Aulia Printing</div>
+            <div className="col mb-4">
+              <div className="card-product">
+                <div className="card-header">
+                  <img src={Product} alt="" className="card-img" />
+                </div>
+                <div className="card-body">
+                  <h1 className="card-title">Aulia Printing</h1>
+                  <p className="card-price">Rp. -</p>
+                  <Button className="card-button">
+                    <Cart4 color="white" className="mb-1 me-1" /> Order Now
+                  </Button>
+                </div>
+              </div>
             </div>
-            <div>
-              <img src={Product} alt="" />
-              <div className="title-box"></div>
-              <div className="title">Aulia Printing</div>
+            <div className="col mb-4">
+              <div className="card-product">
+                <div className="card-header">
+                  <img src={Product} alt="" className="card-img" />
+                </div>
+                <div className="card-body">
+                  <h1 className="card-title">Aulia Printing</h1>
+                  <p className="card-price">Rp. -</p>
+                  <Button className="card-button">
+                    <Cart4 color="white" className="mb-1 me-1" /> Order Now
+                  </Button>
+                </div>
+              </div>
             </div>
-            <div>
-              <img src={Product} alt="" />
-              <div className="title-box"></div>
-              <div className="title">Aulia Printing</div>
+            <div className="col mb-4">
+              <div className="card-product">
+                <div className="card-header">
+                  <img src={Product} alt="" className="card-img" />
+                </div>
+                <div className="card-body">
+                  <h1 className="card-title">Aulia Printing</h1>
+                  <p className="card-price">Rp. -</p>
+                  <Button className="card-button">
+                    <Cart4 color="white" className="mb-1 me-1" /> Order Now
+                  </Button>
+                </div>
+              </div>
             </div>
-            <div>
-              <img src={Product} alt="" />
-              <div className="title-box"></div>
-              <div className="title">Aulia Printing</div>
-            </div>
-            <div>
-              <img src={Product} alt="" />
-              <div className="title-box"></div>
-              <div className="title">Aulia Printing</div>
-            </div>
-            <div>
-              <img src={Product} alt="" />
-              <div className="title-box"></div>
-              <div className="title">Aulia Printing</div>
+            <div className="col mb-4">
+              <div className="card-product">
+                <div className="card-header">
+                  <img src={Product} alt="" className="card-img" />
+                </div>
+                <div className="card-body">
+                  <h1 className="card-title">Aulia Printing</h1>
+                  <p className="card-price">Rp. -</p>
+                  <Button className="card-button">
+                    <Cart4 color="white" className="mb-1 me-1" /> Order Now
+                  </Button>
+                </div>
+              </div>
             </div>
           </div>
         </Container>
