@@ -129,10 +129,7 @@ footer.footer p.footer-copyright {
   footer.footer p.footer-description {
     font-size: 70%;
   }
-}
 
-/* Mobile L */
-@media (max-width: 425px) {
   header.navbar label.navbar-toggle {
     display: flex;
   }
@@ -171,6 +168,10 @@ footer.footer p.footer-copyright {
   footer.footer p.footer-copyright {
     text-align: center;
   }
+}
+
+/* Mobile L */
+@media (max-width: 425px) {
 }
 
 /* Mobile M */
