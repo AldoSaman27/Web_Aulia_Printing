@@ -63,3 +63,31 @@ section.allProduct .container .card-product .card-body .card-button:hover {
   background-color: rgba(50, 130, 184, 0.8);
   border-color: rgba(50, 130, 184, 0.8);
 }
+
+/* Media Query */
+/* Laptop */
+@media (max-width: 1024px) {
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  section.allProduct .container div div {
+    width: 150px;
+  }
+}
+
+/* Mobile L */
+@media (max-width: 425px) {
+}
+
+/* Mobile M */
+@media (max-width: 375px) {
+}
+
+/* Mobile S */
+@media (max-width: 320px) {
+  section.allProduct .container .card-product {
+    min-width: 80% !important;
+    margin: auto;
+  }
+}
