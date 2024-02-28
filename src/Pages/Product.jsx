@@ -13,7 +13,7 @@ const Product = () => {
 
   return (
     <>
-      <NavigationBar />
+      <NavigationBar isProductPage={true} />
       <section id="allProduct" className="allProduct">
         <Container>
           <h1 className="text-center mb-4">Our Product</h1>

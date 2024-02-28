@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { List, XLg } from "react-bootstrap-icons";
 
-const NavigationBar = () => {
+const NavigationBar = ({ isProductPage }) => {
   const [isActive, setIsActive] = useState(false);
 
   window.addEventListener("scroll", () => setIsActive(window.scrollY > 50));
@@ -9,7 +9,7 @@ const NavigationBar = () => {
   return (
     <header
       className="navbar"
-      style={isActive ? { backgroundColor: "#1b262c" } : {}}
+      style={isActive || isProductPage ? { backgroundColor: "#1b262c" } : {}}
     >
       <h1 className="navbar-brand">
         Aulia <span>Printing</span>
@@ -28,16 +28,16 @@ const NavigationBar = () => {
       </label>
 
       <nav className="navbar-menu">
-        <a href="#home" className="navbar-link">
+        <a href="/#home" className="navbar-link">
           Home
         </a>
-        <a href="#about-us" className="navbar-link">
+        <a href="/#about-us" className="navbar-link">
           About Us
         </a>
-        <a href="#product" className="navbar-link">
+        <a href="/#product" className="navbar-link">
           Product
         </a>
-        <a href="#contact" className="navbar-link">
+        <a href="/#contact" className="navbar-link">
           Contact
         </a>
       </nav>
