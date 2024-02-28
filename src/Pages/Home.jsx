@@ -28,7 +28,7 @@ const Home = () => {
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente,
             minima tenetur assumenda quisquam ut esse.
           </p>
-          <Button onClick={() => navigate("/product")}>
+          <Button href="#product">
             Lihat Produk <ArrowRight className="ms-2" size={30} />
           </Button>
         </Container>
