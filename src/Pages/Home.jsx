@@ -10,6 +10,7 @@ import {
   ArrowRight,
   Whatsapp,
   Cart4,
+  ChevronDoubleRight,
 } from "react-bootstrap-icons";
 import { useNavigate } from "react-router-dom";
 
@@ -261,6 +262,9 @@ const Home = () => {
               </div>
             </div>
           </div>
+          <span onClick={() => navigate("/product")}>
+            Lihat Semua Product <ChevronDoubleRight color="#3282b8" />
+          </span>
         </Container>
       </section>
       <section id="contact" className="contact">

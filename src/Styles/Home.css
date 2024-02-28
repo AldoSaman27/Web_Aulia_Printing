@@ -120,6 +120,16 @@ section.product .container .card-product .card-body .card-button:hover {
   border-color: rgba(50, 130, 184, 0.8);
 }
 
+section.product .container span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  color: #3282b8;
+  font-weight: 500;
+  cursor: pointer;
+}
+
 section.contact .container iframe {
   border: 5px solid #0f4c75;
   border-radius: 10px;
