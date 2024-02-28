@@ -1,81 +1,65 @@
-section#Product .container h1 {
-    font-family: "Anta", sans-serif;
-    font-weight: bold;
-    font-style: normal;
+section.allProduct {
+  min-height: 100vh;
 }
 
-section#Product .container div {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+section.allProduct .container {
+  padding: 90px 20px;
 }
 
-section#Product .container div div {
-    position: relative;
-    width: 200px;
-    overflow: hidden;
-    border-radius: 5px;
+section.allProduct .container h1 {
+  font-weight: bold;
 }
 
-section#Product .container div div img {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-    transition: 0.3s ease;
+section.allProduct .container .card-product {
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 15px;
 }
 
-section#Product .container div div:hover img {
-    transform: scale(1.2);
+section.allProduct .container .card-product,
+section.allProduct .container .card-product .card-body {
+  min-width: 100%;
 }
 
-section#Product .container div div .title-box {
-    content: "";
-    height: 100px;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0), #000);
-    z-index: 1;
-    transform: translateY(50px);
-    transition: 0.5s ease;
+section.allProduct .container .card-product .card-header {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 5px;
 }
 
-section#Product .container div div:hover .title,
-section#Product .container div div:hover .title-box {
-    transform: translateX(0);
+section.allProduct .container .card-product .card-header img {
+  width: 100%;
 }
 
-section#Product .container div div .title {
-    position: absolute;
-    width: 100%;
-    color: white;
-    z-index: 2;
-    bottom: 10px;
-    padding: 10px;
-    transform: translateY(50px);
-    transition: 0.5s ease;
-    cursor: pointer;
+section.allProduct .container .card-product .card-header img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  transition: 0.3s ease;
 }
 
-/* Media Query */
-/* Tablet */
-@media (max-width: 768px) {
-    section#Product .container div div {
-        width: 150px;
-    }
+section.allProduct .container .card-product .card-header:hover img {
+  transform: scale(1.2);
 }
 
-/* Mobile L */
-@media (max-width: 425px) {
+section.allProduct .container .card-product .card-body {
+  padding: 10px;
 }
 
-/* Mobile M */ 
-@media (max-width: 375px) {
+section.allProduct .container .card-product .card-body h1.card-title {
+  font-size: 1.3rem;
 }
 
-/* Mobile S */
-@media (max-width: 320px) {
+section.allProduct .container .card-product .card-body p.card-price {
+  font-weight: 500;
+}
+
+section.allProduct .container .card-product .card-body .card-button {
+  background-color: #0f4c75;
+  border-color: #0f4c75;
+}
+
+section.allProduct .container .card-product .card-body .card-button:hover {
+  background-color: rgba(50, 130, 184, 0.8);
+  border-color: rgba(50, 130, 184, 0.8);
 }

@@ -46,7 +46,7 @@ section.home .container a {
   border-radius: 15px;
 }
 
-section.home .container button:hover {
+section.home .container a:hover {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
